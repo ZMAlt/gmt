@@ -1,55 +1,35 @@
 
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>15. Filtering of Data in GMT &mdash; GMT 6.3.0 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/style.css" type="text/css" />
-
-  
-  
-    <link rel="shortcut icon" href="../_static/favicon.png"/>
-  
-
-  
-  
-
-  
-
-  
+  <title>15. Filtering of Data in GMT &mdash; GMT 6.5.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/style.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/togglebutton.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
-        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script>let toggleHintShow = 'Click to show example script';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="16. GMT on non-UNIX Platforms" href="non-unix-platforms.html" />
@@ -62,33 +42,16 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> GMT
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                6.3
+                6.5
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -96,26 +59,17 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
     
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Getting started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../gallery.html">Example Gallery</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../animations.html">Animations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gallery.html">Illustration Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../animations.html">Animation Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial in Bash</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_jl.html">Tutorial in Julia</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.pygmt.org/latest/tutorials/index.html">Tutorials in PyGMT</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Reference documentation</span></p>
+<p class="caption" role="heading"><span class="caption-text">Reference documentation</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../modules.html">Modules</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../cookbook.html">Cookbook</a><ul class="current">
@@ -147,33 +101,33 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../datasets.html">Datasets</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">Resources</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../changes.html">Changelog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../users-contrib-scripts.html">Users Script Contributions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../users-contrib-symbols.html">Users Symbol Contributions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../changes.html">Changelog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../deprecated-defaults.html">Deprecated GMT Defaults Names</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../switching.html">Switching between Different Versions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../migrating.html">Migrating from an Earlier Version</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Classic Mode</span></p>
+<p class="caption" role="heading"><span class="caption-text">Classic Mode</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../std-opts-classic.html">Common Options (Classic Mode)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modules-classic.html">Modules (Classic Mode)</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Developer Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/GenericMappingTools/gmt/blob/master/CONTRIBUTING.md">Contributing Guide</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/GenericMappingTools/gmt/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../rst-cheatsheet.html">reStructuredText Cheatsheet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../debug.html">Debugging GMT</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api.html">GMT C API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../postscriptlight.html">PostScriptLight C API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../devdocs.html">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/GenericMappingTools/.github/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devdocs/contributing.html">Contributors Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devdocs/maintenance.html">Maintainers Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devdocs/team.html">Team Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devdocs/rst-cheatsheet.html">reStructuredText Cheatsheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devdocs/debug.html">Debugging GMT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devdocs/api.html">GMT C API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devdocs/postscriptlight.html">PostScriptLight C API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devdocs/devdocs.html">GMT Enhancement Proposals</a></li>
 </ul>
 
-            
-          
 
     
         <p class="caption">
@@ -193,74 +147,32 @@
     
 
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">GMT</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
           <li><a href="../cookbook.html">Cookbook</a> &raquo;</li>
-        
       <li><span class="section-number">15. </span>Filtering of Data in GMT</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
-            
               <a href="https://github.com/GenericMappingTools/gmt/edit/master/doc/rst/source/cookbook/data-filtering.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="filtering-of-data-in-gmt">
-<h1><span class="section-number">15. </span>Filtering of Data in GMT<a class="headerlink" href="#filtering-of-data-in-gmt" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="filtering-of-data-in-gmt">
+<h1><span class="section-number">15. </span>Filtering of Data in GMT<a class="headerlink" href="#filtering-of-data-in-gmt" title="Permalink to this heading">¶</a></h1>
 <p>The GMT programs <a class="reference internal" href="../filter1d.html"><span class="doc">filter1d</span></a> (for
 tables of data indexed to one independent variable) and
 <a class="reference internal" href="../grdfilter.html"><span class="doc">grdfilter</span></a> (for data given as
@@ -288,24 +200,26 @@ of plotting. In this way the same graph can serve to illustrate both the
 1-D and 2-D impulse responses; in the 2-D case this plot is a
 diametrical cross-section through the filter weights
 (Figure <a class="reference internal" href="#impulse-responses"><span class="std std-ref">Impulse responses</span></a>).</p>
-<div class="figure align-center" id="id3">
+<figure class="align-center" id="id3">
 <span id="impulse-responses"></span><a class="reference internal image-reference" href="../_images/GMT_App_J_1.png"><img alt="../_images/GMT_App_J_1.png" src="../_images/GMT_App_J_1.png" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-text">Impulse responses for GMT filters.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Impulse responses for GMT filters.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <div class="toggle docutils container">
 <p>Here is the source script for the figure above:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gmt begin GMT_App_J_1
-gmt <span class="nb">set</span> GMT_THEME cookbook
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gmt<span class="w"> </span>begin<span class="w"> </span>GMT_App_J_1
+gmt<span class="w"> </span><span class="nb">set</span><span class="w"> </span>GMT_THEME<span class="w"> </span>cookbook
 <span class="nv">RJ</span><span class="o">=</span><span class="s2">&quot;-R-0.6/0.6/-0.1/1.1 -JX4i/2i&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;-0.5	0&quot;</span> &gt; tt.tmp
-gmt math -T-0.5/0.5/0.01 <span class="nv">1</span> <span class="o">=</span> &gt;&gt; tt.tmp
-<span class="nb">echo</span> <span class="s2">&quot;0.5	0&quot;</span> &gt;&gt; tt.tmp
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;-0.5	0&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>tt.tmp
+gmt<span class="w"> </span>math<span class="w"> </span>-T-0.5/0.5/0.01<span class="w"> </span><span class="nv">1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>tt.tmp
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;0.5	0&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>tt.tmp
 
-gmt <span class="nb">set</span> FONT_ANNOT_PRIMARY 10p,Times-Roman FONT_TITLE 14p,Times-Roman FONT_LABEL 12p,Times-Roman
-gmt plot tt.tmp <span class="nv">$RJ</span> -Bxa0.5f0.1+l<span class="s2">&quot;Distance (units of filter width)&quot;</span> -Bya0.2f0.1g1+l<span class="s2">&quot;Relative amplitude&quot;</span> -BWeSn -Wthick
-gmt math -T-0.5/0.5/0.01 T PI <span class="m">2</span> MUL MUL COS <span class="m">1</span> ADD <span class="m">0</span>.5 <span class="nv">MUL</span> <span class="o">=</span> <span class="p">|</span> gmt plot <span class="nv">$RJ</span> -Wthick,-
-gmt math -T-0.5/0.5/0.01 T T MUL <span class="m">18</span> MUL NEG <span class="nv">EXP</span> <span class="o">=</span> <span class="p">|</span> gmt plot <span class="nv">$RJ</span> -Wthick,.
-gmt text -F+f9p,Times-Roman+j <span class="s">&lt;&lt; END</span>
+gmt<span class="w"> </span><span class="nb">set</span><span class="w"> </span>FONT_ANNOT_PRIMARY<span class="w"> </span>10p,Times-Roman<span class="w"> </span>FONT_TITLE<span class="w"> </span>14p,Times-Roman<span class="w"> </span>FONT_LABEL<span class="w"> </span>12p,Times-Roman
+gmt<span class="w"> </span>plot<span class="w"> </span>tt.tmp<span class="w"> </span><span class="nv">$RJ</span><span class="w"> </span>-Bxa0.5f0.1+l<span class="s2">&quot;Distance (units of filter width)&quot;</span><span class="w"> </span>-Bya0.2f0.1g1+l<span class="s2">&quot;Relative amplitude&quot;</span><span class="w"> </span>-BWeSn<span class="w"> </span>-Wthick
+gmt<span class="w"> </span>math<span class="w"> </span>-T-0.5/0.5/0.01<span class="w"> </span>T<span class="w"> </span>PI<span class="w"> </span><span class="m">2</span><span class="w"> </span>MUL<span class="w"> </span>MUL<span class="w"> </span>COS<span class="w"> </span><span class="m">1</span><span class="w"> </span>ADD<span class="w"> </span><span class="m">0</span>.5<span class="w"> </span><span class="nv">MUL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>gmt<span class="w"> </span>plot<span class="w"> </span><span class="nv">$RJ</span><span class="w"> </span>-Wthick,-
+gmt<span class="w"> </span>math<span class="w"> </span>-T-0.5/0.5/0.01<span class="w"> </span>T<span class="w"> </span>T<span class="w"> </span>MUL<span class="w"> </span><span class="m">18</span><span class="w"> </span>MUL<span class="w"> </span>NEG<span class="w"> </span><span class="nv">EXP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>gmt<span class="w"> </span>plot<span class="w"> </span><span class="nv">$RJ</span><span class="w"> </span>-Wthick,.
+gmt<span class="w"> </span>text<span class="w"> </span>-F+f9p,Times-Roman+j<span class="w"> </span><span class="s">&lt;&lt; END</span>
 <span class="s">-0.2	0.3	LM	Solid Line:</span>
 <span class="s">-0.2	0.2	LM	Dotted Line:</span>
 <span class="s">-0.2	0.1	LM	Dashed Line:</span>
@@ -313,7 +227,7 @@ gmt text -F+f9p,Times-Roman+j <span class="s">&lt;&lt; END</span>
 <span class="s">0.2	0.2	RM	Gaussian</span>
 <span class="s">0.2	0.1	RM	Cosine</span>
 <span class="s">END</span>
-gmt end show
+gmt<span class="w"> </span>end<span class="w"> </span>show
 </pre></div>
 </div>
 </div>
@@ -333,19 +247,21 @@ filters are “better” in the sense that they do not have the “side lobes”
 (large-amplitude oscillations in the transfer function) that the boxcar
 filter has. However, they are correspondingly “worse” in the sense that
 they require more work (doubling the width to achieve the same cut-off wavelength).</p>
-<div class="figure align-center" id="id4">
+<figure class="align-center" id="id4">
 <span id="gmt-1d-filters"></span><a class="reference internal image-reference" href="../_images/GMT_App_J_2.png"><img alt="../_images/GMT_App_J_2.png" src="../_images/GMT_App_J_2.png" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-text">Transfer functions for 1-D GMT filters.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Transfer functions for 1-D GMT filters.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <div class="toggle docutils container">
 <p>Here is the source script for the figure above:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gmt begin GMT_App_J_2
-gmt <span class="nb">set</span> GMT_THEME cookbook
-gmt <span class="nb">set</span> FONT_ANNOT_PRIMARY 10p,Times-Roman FONT_TITLE 14p,Times-Roman FONT_LABEL 12p,Times-Roman
-gmt math -T0/5/0.01 T <span class="nv">SINC</span> <span class="o">=</span> <span class="p">|</span> gmt plot -R0/5/-0.3/1 -JX4i/2i -Bxa1f0.2+l<span class="s2">&quot;Frequency (cycles per filter width)&quot;</span> -Bya0.2f0.1g1+l<span class="s2">&quot;Gain&quot;</span> -BWeSn -Wthick
-gmt math -T0/5/0.01 T SINC <span class="m">1</span> T T MUL SUB <span class="nv">DIV</span> <span class="o">=</span> <span class="p">|</span> grep -v <span class="s1">&#39;^&gt;&#39;</span> <span class="p">|</span> <span class="nv">$AWK</span> <span class="s1">&#39;{ if ($1 == 1) print 1, 0.5; else print $0}&#39;</span> <span class="p">|</span> gmt plot -Wthick,-
-gmt math -T0/5/0.01 T PI MUL DUP MUL <span class="m">18</span> DIV NEG <span class="nv">EXP</span> <span class="o">=</span> <span class="p">|</span> gmt plot -Wthick,.
-gmt text -F+f9p,Times-Roman+j <span class="s">&lt;&lt; END</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gmt<span class="w"> </span>begin<span class="w"> </span>GMT_App_J_2
+gmt<span class="w"> </span><span class="nb">set</span><span class="w"> </span>GMT_THEME<span class="w"> </span>cookbook
+gmt<span class="w"> </span><span class="nb">set</span><span class="w"> </span>FONT_ANNOT_PRIMARY<span class="w"> </span>10p,Times-Roman<span class="w"> </span>FONT_TITLE<span class="w"> </span>14p,Times-Roman<span class="w"> </span>FONT_LABEL<span class="w"> </span>12p,Times-Roman
+gmt<span class="w"> </span>math<span class="w"> </span>-T0/5/0.01<span class="w"> </span>T<span class="w"> </span><span class="nv">SINC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>gmt<span class="w"> </span>plot<span class="w"> </span>-R0/5/-0.3/1<span class="w"> </span>-JX4i/2i<span class="w"> </span>-Bxa1f0.2+l<span class="s2">&quot;Frequency (cycles per filter width)&quot;</span><span class="w"> </span>-Bya0.2f0.1g1+l<span class="s2">&quot;Gain&quot;</span><span class="w"> </span>-BWeSn<span class="w"> </span>-Wthick
+gmt<span class="w"> </span>math<span class="w"> </span>-T0/5/0.01<span class="w"> </span>T<span class="w"> </span>SINC<span class="w"> </span><span class="m">1</span><span class="w"> </span>T<span class="w"> </span>T<span class="w"> </span>MUL<span class="w"> </span>SUB<span class="w"> </span><span class="nv">DIV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span><span class="s1">&#39;^&gt;&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nv">$AWK</span><span class="w"> </span><span class="s1">&#39;{ if ($1 == 1) print 1, 0.5; else print $0}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>gmt<span class="w"> </span>plot<span class="w"> </span>-Wthick,-
+gmt<span class="w"> </span>math<span class="w"> </span>-T0/5/0.01<span class="w"> </span>T<span class="w"> </span>PI<span class="w"> </span>MUL<span class="w"> </span>DUP<span class="w"> </span>MUL<span class="w"> </span><span class="m">18</span><span class="w"> </span>DIV<span class="w"> </span>NEG<span class="w"> </span><span class="nv">EXP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>gmt<span class="w"> </span>plot<span class="w"> </span>-Wthick,.
+gmt<span class="w"> </span>text<span class="w"> </span>-F+f9p,Times-Roman+j<span class="w"> </span><span class="s">&lt;&lt; END</span>
 <span class="s">2.2	0.6	LM	Solid Line:</span>
 <span class="s">2.2	0.5	LM	Dotted Line:</span>
 <span class="s">2.2	0.4	LM	Dashed Line:</span>
@@ -353,26 +269,28 @@ gmt text -F+f9p,Times-Roman+j <span class="s">&lt;&lt; END</span>
 <span class="s">3.8	0.5	RM	Gaussian</span>
 <span class="s">3.8	0.4	RM	Cosine</span>
 <span class="s">END</span>
-gmt end show
+gmt<span class="w"> </span>end<span class="w"> </span>show
 </pre></div>
 </div>
 </div>
 <p>One of the nice things about the gaussian filter is that its transfer
 functions are the same in 1-D and 2-D. Another nice property is that it
 has no negative side lobes. There are many definitions of the gaussian
-filter in the literature (see page 7 of Bracewell <a class="footnote-reference brackets" href="#id2" id="id1">30</a>). We define
+filter in the literature (see page 7 of Bracewell <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>30<span class="fn-bracket">]</span></a>). We define
 <span class="math notranslate nohighlight">\(\sigma\)</span> equal to 1/6 of the filter width, and the impulse
 response proportional to <span class="math notranslate nohighlight">\(\exp[-0.5(t/\sigma)^2)\)</span>. With this
 definition, the transfer function is <span class="math notranslate nohighlight">\(\exp[-2(\pi\sigma f)^2]\)</span> and
 the wavelength at which the transfer function equals 0.5 is about 5.34
 <span class="math notranslate nohighlight">\(\sigma\)</span>, or about 0.89 of the filter width.</p>
-<div class="figure align-center" id="id5">
+<figure class="align-center" id="id5">
 <span id="gmt-2d-filters"></span><a class="reference internal image-reference" href="../_images/GMT_App_J_3.png"><img alt="../_images/GMT_App_J_3.png" src="../_images/GMT_App_J_3.png" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-text">Transfer functions for 2-D (radial) GMT filters.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Transfer functions for 2-D (radial) GMT filters.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <div class="toggle docutils container">
 <p>Here is the source script for the figure above:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat <span class="s">&lt;&lt; EOF &gt; tt.r_tr_fns</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span><span class="s">&lt;&lt; EOF &gt; tt.r_tr_fns</span>
 <span class="s">0	1	1	1</span>
 <span class="s">0.01	0.99987664	0.99994254	0.99994517</span>
 <span class="s">0.02	0.9995066	0.99977019	0.9997807</span>
@@ -875,13 +793,13 @@ the wavelength at which the transfer function equals 0.5 is about 5.34
 <span class="s">4.99	0.018329813	-0.0014395575	1.1764518e-06</span>
 <span class="s">5	0.017701225	-0.0013879802	1.1137433e-06</span>
 <span class="s">EOF</span>
-gmt begin GMT_App_J_3
-gmt <span class="nb">set</span> GMT_THEME cookbook
-gmt <span class="nb">set</span> FONT_ANNOT_PRIMARY 10p,Times-Roman FONT_TITLE 14p,Times-Roman FONT_LABEL 12p,Times-Roman
-cut -f1,2 tt.r_tr_fns <span class="p">|</span> gmt plot -R0/5/-0.3/1 -JX4i/2i -Bxa1f0.2+l<span class="s2">&quot;Frequency (cycles per filter width)&quot;</span> -Bya0.2f0.1g1+l<span class="s2">&quot;Gain&quot;</span> -BWeSn -Wthick
-cut -f1,3 tt.r_tr_fns <span class="p">|</span> gmt plot -Wthick,-
-cut -f1,4 tt.r_tr_fns <span class="p">|</span> gmt plot -Wthick,.
-gmt text -F+f9p,Times-Roman+j <span class="s">&lt;&lt; END</span>
+gmt<span class="w"> </span>begin<span class="w"> </span>GMT_App_J_3
+gmt<span class="w"> </span><span class="nb">set</span><span class="w"> </span>GMT_THEME<span class="w"> </span>cookbook
+gmt<span class="w"> </span><span class="nb">set</span><span class="w"> </span>FONT_ANNOT_PRIMARY<span class="w"> </span>10p,Times-Roman<span class="w"> </span>FONT_TITLE<span class="w"> </span>14p,Times-Roman<span class="w"> </span>FONT_LABEL<span class="w"> </span>12p,Times-Roman
+cut<span class="w"> </span>-f1,2<span class="w"> </span>tt.r_tr_fns<span class="w"> </span><span class="p">|</span><span class="w"> </span>gmt<span class="w"> </span>plot<span class="w"> </span>-R0/5/-0.3/1<span class="w"> </span>-JX4i/2i<span class="w"> </span>-Bxa1f0.2+l<span class="s2">&quot;Frequency (cycles per filter width)&quot;</span><span class="w"> </span>-Bya0.2f0.1g1+l<span class="s2">&quot;Gain&quot;</span><span class="w"> </span>-BWeSn<span class="w"> </span>-Wthick
+cut<span class="w"> </span>-f1,3<span class="w"> </span>tt.r_tr_fns<span class="w"> </span><span class="p">|</span><span class="w"> </span>gmt<span class="w"> </span>plot<span class="w"> </span>-Wthick,-
+cut<span class="w"> </span>-f1,4<span class="w"> </span>tt.r_tr_fns<span class="w"> </span><span class="p">|</span><span class="w"> </span>gmt<span class="w"> </span>plot<span class="w"> </span>-Wthick,.
+gmt<span class="w"> </span>text<span class="w"> </span>-F+f9p,Times-Roman+j<span class="w"> </span><span class="s">&lt;&lt; END</span>
 <span class="s">2.2	0.6	LM	Solid Line:</span>
 <span class="s">2.2	0.5	LM	Dotted Line:</span>
 <span class="s">2.2	0.4	LM	Dashed Line:</span>
@@ -889,70 +807,53 @@ gmt text -F+f9p,Times-Roman+j <span class="s">&lt;&lt; END</span>
 <span class="s">3.8	0.5	RM	Gaussian</span>
 <span class="s">3.8	0.4	RM	Cosine</span>
 <span class="s">END</span>
-gmt end show
+gmt<span class="w"> </span>end<span class="w"> </span>show
 </pre></div>
 </div>
 </div>
-<div class="section" id="footnote">
-<h2><span class="section-number">15.1. </span>Footnote<a class="headerlink" href="#footnote" title="Permalink to this headline">¶</a></h2>
-<dl class="footnote brackets">
-<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">30</a></span></dt>
-<dd><p>R. Bracewell, <em>The Fourier Transform and its Applications</em>,
+<section id="footnote">
+<h2><span class="section-number">15.1. </span>Footnote<a class="headerlink" href="#footnote" title="Permalink to this heading">¶</a></h2>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">30</a><span class="fn-bracket">]</span></span>
+<p>R. Bracewell, <em>The Fourier Transform and its Applications</em>,
 McGraw-Hill, London, 444 p., 1965.</p>
-</dd>
-</dl>
-</div>
-</div>
+</aside>
+</aside>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="non-unix-platforms.html" class="btn btn-neutral float-right" title="16. GMT on non-UNIX Platforms" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="colorspace.html" class="btn btn-neutral float-left" title="14. Color Systems and Artificial Illumination" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="non-unix-platforms.html" class="btn btn-neutral float-right" title="16. GMT on non-UNIX Platforms" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2021, The GMT Team..
-      <span class="lastupdated">
-        Last updated on Jun 06, 2021.
-      </span>
-
-    </p>
+    <p>&#169; Copyright 2023, The GMT Team.
+      <span class="lastupdated">Last updated on Mar 10, 2023.
+      </span></p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(false);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
